@@ -35,7 +35,7 @@ const start = () => {
         else if (text === "/inst") bot.sendMessage(chatId, '<a href="https://www.instagram.com/aylok1n/">aylok1n</a>', { parse_mode: 'HTML' })
         else if (text === "/chiril") bot.sendVoice(chatId, './assets/chiril.mp3')
         else if (text === "/xyu") bot.sendPhoto(chatId, './assets/xyu.jpg')
-        else if (text === "порно") bot.sendPhoto(chatId, './assets/porn.jpg')
+        else if (text === "порно" || text === "Порно") bot.sendPhoto(chatId, './assets/porn.jpg')
         else {
             await bot.sendMessage(chatId, `нихуясе и нахуя мне твое ${text}`)
         }
