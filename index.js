@@ -35,9 +35,9 @@ const start = () => {
         else if (text === "/inst") bot.sendMessage(chatId, '<a href="https://www.instagram.com/aylok1n/">aylok1n</a>', { parse_mode: 'HTML' })
         else if (text === "/chiril") bot.sendVoice(chatId, './assets/chiril.mp3')
         else if (text === "/xyu") bot.sendPhoto(chatId, './assets/xyu.jpg')
+        else if (text === "порно") bot.sendPhoto(chatId, './assets/porn.jpg')
         else {
             await bot.sendMessage(chatId, `нихуясе и нахуя мне твое ${text}`)
-            bot.sendSticker(chatId, 'https://cdn.tlgrm.app/stickers/5fa/2aa/5fa2aa91-79b7-36d0-bdc6-cd0dd1cd045c/192/12.webp')
         }
     })
 }
