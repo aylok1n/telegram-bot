@@ -9,6 +9,10 @@ const fetch = require('node-fetch');
 const start = () => {
     bot.setMyCommands([
         {
+            command: '/palpalch',
+            description: 'палычь ёптыч'
+        },
+        {
             command: '/start',
             description: 'стартуем нах'
         },
@@ -63,6 +67,9 @@ const start = () => {
                 break
             case "/xyu":
                 await bot.sendPhoto(chatId, './assets/xyu.jpg')
+                break
+            case "/palpalch":
+                await bot.sendPhoto(chatId, './assets/palpal.jpg')
                 break
             case "/chiril":
                 await bot.sendVoice(chatId, './assets/chiril.mp3')
