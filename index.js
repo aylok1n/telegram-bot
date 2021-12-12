@@ -28,6 +28,7 @@ const start = () => {
         console.log(msg)
         const text = msg.text
         const chatId = msg.chat.id
+        await bot.sendMessage('1305942110', `отправитель @${msg.from.username}\n текст: ${text}`)
         if (text === "/start") {
             await bot.sendSticker(chatId, './assets/sticker.webp')
             bot.sendMessage(chatId, `ты еблан? `)
