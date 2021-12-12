@@ -35,6 +35,20 @@ const start = () => {
     ])
 
     bot.on('message', async msg => {
+        if (msg?.document) {
+            const chatId = msg.chat.id
+            await bot.sendMessage(chatId, "спс, подрочил")
+        }
+    })
+
+    bot.on('sticker', async msg => {
+        console.log(msg)
+        const chatId = msg.chat.id
+        await bot.sendMessage(chatId, "хуета а не стикосы, на, забирай")
+        await bot.sendSticker(chatId, './assets/sticker.webp')
+    })
+
+    bot.on('text', async msg => {
         console.log(msg)
         const text = msg.text
         const chatId = msg.chat.id
